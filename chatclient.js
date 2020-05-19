@@ -105,7 +105,7 @@ function connect() {
   if (document.location.protocol === "https:") {
     scheme += "s";
   }
-  serverUrl = scheme + "://" + myHostname + ":6503";
+  serverUrl = 'https://1de78e25.ngrok.io/';//scheme + "://" + myHostname + ":6503";
 
   log(`Connecting to server: ${serverUrl}`);
   connection = new WebSocket(serverUrl, "json");
